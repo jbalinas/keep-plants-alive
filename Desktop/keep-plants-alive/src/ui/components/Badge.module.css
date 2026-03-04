@@ -1,0 +1,14 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.overdue { background: var(--color-overdue-bg); color: var(--color-overdue); }
+.due     { background: var(--color-due-bg);     color: var(--color-due);     }
+.ok      { background: var(--color-ok-bg);      color: var(--color-ok);      }

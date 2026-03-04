@@ -1,0 +1,48 @@
+.card {
+  background: var(--color-paper);
+  border: 1px solid var(--color-parchment);
+  border-left: 4px solid var(--color-sage);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-base);
+}
+
+.card:hover { box-shadow: var(--shadow-md); }
+
+.overdue { border-left-color: var(--color-overdue); }
+.due     { border-left-color: var(--color-due);     }
+.ok      { border-left-color: var(--color-sage);    }
+
+.body { flex: 1; min-width: 0; }
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.location { font-size: 0.75rem; color: #6b7280; }
+
+.name { font-size: 1.2rem; font-weight: 600; margin-bottom: var(--space-1); }
+.name a { color: var(--color-forest); text-decoration: none; }
+.name a:hover { text-decoration: underline; }
+
+.species { font-size: 0.875rem; color: #6b7280; font-style: italic; margin-bottom: var(--space-1); }
+.schedule { font-size: 0.8rem; color: #9ca3af; }
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+.editLink { font-size: 0.8rem; color: var(--color-leaf); }
